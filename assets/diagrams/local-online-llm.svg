@@ -1,0 +1,14 @@
+<svg width="1200" height="520" viewBox="0 0 1200 520" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="520" rx="28" fill="#0a0f1e"/>
+  <text x="50" y="64" fill="#fff" font-family="Inter,Arial" font-size="34" font-weight="700">Offline vs Online LLMs</text>
+  <text x="50" y="96" fill="#94a3b8" font-family="Inter,Arial" font-size="18">Choose based on data sensitivity, budget, scale, and performance.</text>
+  <rect x="60" y="135" width="510" height="310" rx="24" fill="#0f172a" stroke="#22d3ee" stroke-width="2"/>
+  <rect x="630" y="135" width="510" height="310" rx="24" fill="#0f172a" stroke="#a78bfa" stroke-width="2"/>
+  <text x="95" y="185" fill="#67e8f9" font-family="Inter,Arial" font-size="28" font-weight="700">Offline / Local</text>
+  <text x="665" y="185" fill="#c4b5fd" font-family="Inter,Arial" font-size="28" font-weight="700">Online / Cloud</text>
+  <g fill="#e2e8f0" font-family="Inter,Arial" font-size="18">
+    <text x="95" y="235">+ More control over data</text><text x="95" y="270">+ Useful for private logs and internal docs</text><text x="95" y="305">+ Works without sending data to cloud</text><text x="95" y="350">- Needs hardware and setup effort</text><text x="95" y="385">- Smaller models may be weaker</text>
+    <text x="665" y="235">+ Fast setup and strong models</text><text x="665" y="270">+ Good for heavy reasoning and coding</text><text x="665" y="305">+ Easier upgrades and scaling</text><text x="665" y="350">- Needs internet and vendor access</text><text x="665" y="385">- Requires careful data handling</text>
+  </g>
+  <text x="60" y="485" fill="#f8fafc" font-family="Inter,Arial" font-size="20">Recommended pattern: use local for sensitive data and online for approved, non-sensitive engineering acceleration.</text>
+</svg>

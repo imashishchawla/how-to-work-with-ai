@@ -1,0 +1,10 @@
+<svg width="1200" height="500" viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg">
+<rect width="1200" height="500" rx="28" fill="#0b1020"/>
+<text x="50" y="65" fill="#fff" font-family="Inter,Arial" font-size="34" font-weight="700">Repository Learning Path</text>
+<text x="50" y="100" fill="#94a3b8" font-family="Inter,Arial" font-size="18">Start with concepts, then install tools, then run guided engineering workflows.</text>
+<g font-family="Inter,Arial" font-size="18">
+<rect x="70" y="150" width="310" height="250" rx="22" fill="#111936" stroke="#38bdf8"/><text x="105" y="200" fill="#fff" font-weight="700">1. Learn</text><text x="105" y="240" fill="#cbd5e1">AI terms</text><text x="105" y="275" fill="#cbd5e1">Model selection</text><text x="105" y="310" fill="#cbd5e1">Offline vs online</text></g>
+<g font-family="Inter,Arial" font-size="18"><rect x="445" y="150" width="310" height="250" rx="22" fill="#111936" stroke="#a78bfa"/><text x="480" y="200" fill="#fff" font-weight="700">2. Setup</text><text x="480" y="240" fill="#cbd5e1">Ollama / llama.cpp</text><text x="480" y="275" fill="#cbd5e1">Claude Code / Codex</text><text x="480" y="310" fill="#cbd5e1">OpenCode / local endpoints</text></g>
+<g font-family="Inter,Arial" font-size="18"><rect x="820" y="150" width="310" height="250" rx="22" fill="#111936" stroke="#fb923c"/><text x="855" y="200" fill="#fff" font-weight="700">3. Apply</text><text x="855" y="240" fill="#cbd5e1">Ticket triage</text><text x="855" y="275" fill="#cbd5e1">RCA drafts</text><text x="855" y="310" fill="#cbd5e1">Terraform generation</text></g>
+<path d="M390 275 H435 M765 275 H810" stroke="#67e8f9" stroke-width="4" stroke-linecap="round"/>
+</svg>

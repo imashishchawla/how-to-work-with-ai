@@ -1,0 +1,15 @@
+<svg width="1200" height="420" viewBox="0 0 1200 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="420" rx="28" fill="#0b1020"/>
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1200" y2="420"><stop stop-color="#22d3ee"/><stop offset=".55" stop-color="#8b5cf6"/><stop offset="1" stop-color="#f97316"/></linearGradient></defs>
+  <text x="50" y="62" fill="#fff" font-family="Inter,Arial" font-size="34" font-weight="700">AI for Engineers: practical workflow</text>
+  <text x="50" y="96" fill="#b7c2d8" font-family="Inter,Arial" font-size="18">Use AI as a reviewed teammate, not as an unchecked replacement.</text>
+  <g font-family="Inter,Arial" font-size="18" font-weight="700">
+    <rect x="55" y="155" width="175" height="92" rx="18" fill="#111936" stroke="url(#g)" stroke-width="2"/><text x="90" y="205" fill="#fff">1. Ask</text><text x="90" y="230" fill="#95a3bd" font-size="14" font-weight="400">clear prompt</text>
+    <rect x="275" y="155" width="175" height="92" rx="18" fill="#111936" stroke="url(#g)" stroke-width="2"/><text x="302" y="205" fill="#fff">2. Context</text><text x="302" y="230" fill="#95a3bd" font-size="14" font-weight="400">docs, logs, code</text>
+    <rect x="495" y="155" width="175" height="92" rx="18" fill="#111936" stroke="url(#g)" stroke-width="2"/><text x="525" y="205" fill="#fff">3. Generate</text><text x="525" y="230" fill="#95a3bd" font-size="14" font-weight="400">draft, code, RCA</text>
+    <rect x="715" y="155" width="175" height="92" rx="18" fill="#111936" stroke="url(#g)" stroke-width="2"/><text x="748" y="205" fill="#fff">4. Verify</text><text x="748" y="230" fill="#95a3bd" font-size="14" font-weight="400">test + review</text>
+    <rect x="935" y="155" width="210" height="92" rx="18" fill="#111936" stroke="url(#g)" stroke-width="2"/><text x="970" y="205" fill="#fff">5. Improve</text><text x="970" y="230" fill="#95a3bd" font-size="14" font-weight="400">save prompts & learnings</text>
+  </g>
+  <path d="M238 201 H268 M458 201 H488 M678 201 H708 M898 201 H928" stroke="#7dd3fc" stroke-width="3" stroke-linecap="round"/>
+  <text x="70" y="335" fill="#e2e8f0" font-family="Inter,Arial" font-size="20">Best result = right prompt + right context + human validation + reusable workflow</text>
+</svg>

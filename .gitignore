@@ -1,0 +1,7 @@
+.env
+*.pem
+*.key
+*.log
+.DS_Store
+node_modules/
+__pycache__/
