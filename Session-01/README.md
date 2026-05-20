@@ -313,7 +313,6 @@ Open an issue with:
 ---
 
 <p align="center">
-  <strong>Built for engineers. Powered by AI. Reviewed by humans.</strong>
-  <br>
-  <sub>MIT License · 2026</sub>
+  <strong>Built for engineers. Powered by AI. Reviewed by humans.</strong><br>
+  <sub>Ashish Chawla · HCP Infrastructure · IBM Software Labs · APAC India · MIT License · 2026</sub>
 </p>
