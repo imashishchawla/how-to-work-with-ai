@@ -15,6 +15,7 @@ Describe the goal.
 - [ ] Claude Code
 - [ ] Codex CLI
 - [ ] OpenCode
+- [ ] IBM Bob (Bob Shell)
 - [ ] Ollama
 - [ ] llama.cpp
 - [ ] Prompt template

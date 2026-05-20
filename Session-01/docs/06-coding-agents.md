@@ -9,8 +9,9 @@ Coding agents can read repositories, edit files, run commands, explain code, and
 | Tool | Best for | Official docs |
 |---|---|---|
 | Claude Code | Agentic coding, repo tasks, code explanation | https://code.claude.com/docs/en/setup |
-| Codex CLI | Terminal-based coding agent from OpenAI | https://developers.openai.com/codex/cli |
+| Codex CLI | Terminal-based coding agent from OpenAI | https://github.com/openai/codex |
 | OpenCode | Open-source coding agent with multiple providers | https://opencode.ai/docs/ |
+| IBM Bob (Bob Shell) | Enterprise SDLC, legacy modernization, team workflows | https://bob.ibm.com/docs/ide |
 
 ---
 
@@ -110,6 +111,32 @@ aws iam*
 gcloud projects delete
 az group delete
 ```
+
+## IBM Bob (Bob Shell) setup
+
+IBM Bob ships with **Bob Shell**, a terminal-based coding agent.
+
+First install IBM Bob from:
+
+```text
+https://bob.ibm.com/download
+```
+
+Then launch the agent:
+
+```bash
+bob shell
+```
+
+Good first prompt:
+
+```text
+Review this repository structure. Do not make any changes. Summarize the key files, entry points, and any obvious risks or improvements.
+```
+
+See the IBM Bob section in the README for full installation steps (macOS, Linux, Windows).
+
+---
 
 ## Good engineering prompt pattern
 

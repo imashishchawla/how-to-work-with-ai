@@ -20,7 +20,17 @@ resource "aws_vpc" "main" {
   tags = { Name = "demo-vpc" }
 }
 
-# Private subnets
+# Public subnet (required for NAT Gateway — must have route to IGW)
+resource "aws_subnet" "public" {
+  vpc_id                  = aws_vpc.main.id
+  cidr_block              = cidrsubnet(aws_vpc.main.cidr_block, 8, 100)
+  availability_zone       = data.aws_availability_zones.available.names[0]
+  map_public_ip_on_launch = true
+
+  tags = { Name = "demo-public-0" }
+}
+
+# Private subnets (app and db servers — no public IPs)
 resource "aws_subnet" "private" {
   count             = 2
   vpc_id            = aws_vpc.main.id
@@ -30,10 +40,27 @@ resource "aws_subnet" "private" {
   tags = { Name = "demo-private-${count.index}" }
 }
 
-# Internet Gateway (for NAT Gateway)
+# Internet Gateway
 resource "aws_internet_gateway" "main" {
   vpc_id = aws_vpc.main.id
   tags   = { Name = "demo-igw" }
+}
+
+# Public route table — routes internet traffic to IGW
+resource "aws_route_table" "public" {
+  vpc_id = aws_vpc.main.id
+
+  route {
+    cidr_block = "0.0.0.0/0"
+    gateway_id = aws_internet_gateway.main.id
+  }
+
+  tags = { Name = "demo-public-rt" }
+}
+
+resource "aws_route_table_association" "public" {
+  subnet_id      = aws_subnet.public.id
+  route_table_id = aws_route_table.public.id
 }
 
 # Elastic IP for NAT Gateway
@@ -42,14 +69,15 @@ resource "aws_eip" "nat" {
   tags   = { Name = "demo-nat-eip" }
 }
 
-# NAT Gateway (so private instances can reach internet for updates)
+# NAT Gateway — placed in the PUBLIC subnet so it can reach the internet
 resource "aws_nat_gateway" "main" {
   allocation_id = aws_eip.nat.id
-  subnet_id     = aws_subnet.private[0].id
+  subnet_id     = aws_subnet.public.id
+  depends_on    = [aws_internet_gateway.main]
   tags          = { Name = "demo-nat" }
 }
 
-# Private route table with NAT gateway
+# Private route table — routes outbound traffic through NAT
 resource "aws_route_table" "private" {
   vpc_id = aws_vpc.main.id
 

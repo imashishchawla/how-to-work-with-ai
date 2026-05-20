@@ -57,6 +57,44 @@ which opencode
 opencode --version
 ```
 
+## IBM Bob (Bob Shell)
+
+### `bob: command not found`
+
+Reinstall Bob from the official download page:
+
+```text
+https://bob.ibm.com/download
+```
+
+After install, restart your terminal and verify:
+
+```bash
+bob --version
+```
+
+### Sign-in issues
+
+Make sure you have a valid IBMid. Sign in through the app or browser flow:
+
+```bash
+bob shell
+```
+
+If authentication fails, check your IBMid credentials and retry the browser-based login from the app.
+
+### Bob Shell is not responding
+
+Restart the terminal and relaunch:
+
+```bash
+bob shell
+```
+
+If the issue persists, check Bob's status page or your organization's proxy/firewall settings.
+
+---
+
 ## Ollama
 
 ### API not responding

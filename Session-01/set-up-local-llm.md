@@ -587,11 +587,3 @@ http://127.0.0.1:1234/v1
 ```
 
 You can now connect this endpoint to local tools, AI coding assistants, private chat apps, or your own applications.
-
--------------
-mkdir -p ~/models/gguf/qwen3-8b
-
-hf download Qwen/Qwen3-8B-GGUF \
-  --include "*Q4_K_M.gguf" \
-  --local-dir ~/models/gguf/qwen3-8b
-  ----------------
