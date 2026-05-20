@@ -1,10 +1,10 @@
 # How to Work With AI
 
-> A hands-on, multi-session guide for engineers learning to use AI tools responsibly — from basics to production workflows.
+A hands-on, multi-session guide for engineers learning to use AI tools responsibly — from basics to production workflows.
 
-**Author:** Ashish Chawla
-**Role:** HCP Infrastructure · IBM Software Labs · APAC India
-**GitHub:** [imashishchawla](https://github.com/imashishchawla)
+**Author:** Ashish Chawla </br>
+**Role:** HCP Infrastructure · IBM Software Labs · APAC India </br>
+**GitHub:** [imashishchawla](https://github.com/imashishchawla) </br>
 
 ---
 
@@ -45,5 +45,5 @@ cd how-to-work-with-ai
 
 <p align="center">
   <strong>Built for engineers. Powered by AI. Reviewed by humans.</strong><br>
-  <sub>Ashish Chawla · IBM Software Labs · APAC India · MIT License · 2026</sub>
+  <sub>Ashish Chawla · IBM Software Labs · APAC India · 2026</sub>
 </p>
